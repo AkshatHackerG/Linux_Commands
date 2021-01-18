@@ -1,0 +1,147 @@
+1. cd : current directory
+-> cd .. : (move one directory backword)
+-> cd dir_name or folder_name : if you have to jump to specific folder in some directory then
+
+2. ls : list all dir and files
+-> ls -l : list all dir and files in list in alphabetical order
+-> ls -la :  list all dir and files and also hidden files and hidden dir in list format and in alphabetical order
+
+3. clear : clear the terminal screen
+
+4. up arrow : helps you to take you through all previous commands which you had used.
+
+5. down arrow : helps you to take you through the recent commands.
+
+6. right arrow + tab : helps in completing suggestive words.
+-> Double tab will give the words suggestions
+
+7. ifconfig : shows all network configurations of device
+
+8. mkdir dir_name : create a named file directory in specified place.
+-> mkdir -p dir1/dir2/.../dirN : it'll create sub-directories within parent directories
+
+9. rm file_name/dir : removes a file of specified name
+-> rm -r dir_name : it'll remove directory with it's all content. 
+-> rm -rf dir_name : it'll remove directory and it's content file with force and never prompts
+
+10. exit : this command helps to exit from terminal 
+
+11. echo : print output on terminal screen
+
+12. echo "hello" > file_name : writes output in specified file
+    (if some other word or sentence is written then it'll overwrite the old one)	
+->  echo "hello" >> file_name : appends the new stuffs.
+->  head filename.ext : it'll display first 10 lines of the file
+->  tail filename.ext : it'll display last 10 lines of the file
+
+13. cp file_name.ext folder_name : copies file into specific folder
+->  cp filename.ext new_filename.ext : can rename the file and copy the contents of original file in newfile
+
+14. mv file_name.ext folder_name : move file into specific folder
+->  mv filename.ext new_filename.ext : can rename the file and move the contents of original file in newfile
+
+15. history : shows all commands that were written in past
+->  history -c : this'll clear the history of commands
+
+16. neofetch : shows the details of system(to view system info, install neofetch, apt-get install neofetch)
+
+17. ping google.com/ip_address : helps to check if packets of our network our flowing(incoming & outgoing is working) between network and machine.
+
+18. shutdown : this command shutdown the machine
+->  shutdown -r : this command shutdown the machine and automatically restarts it.
+
+19. cat file_name : print all data of file on screen
+->  cat > file (next line: enter the content you wanna put in that file) : this'll redirect the output to the file 
+->  cat >> file (next line: enter the content you wanna put in that file) : this'll append the output to the file
+
+20. man command : opens up the manual of command
+
+21. nano/leafpad : opens text editor 
+
+22. chmod : change permissions of files
+
+23. chown : it'll change the owner of specific file/directory
+
+24. pwd : prints working directory
+
+25. touch file_name : it'll create the new empty file
+
+26. whoami : shows name of current user
+
+27. locate file/dir_name : it'll look for that specific file in whole linux and show results related to that file on terminal.
+
+28. sudo updatedb : it updates everything and it'll build database and update all findings
+
+29. adduser user_name : it will then proceed to create a new user
+
+30. su user_name : it'll switch user to specified name
+
+31. systemctl enable/disable service_name : it'll enable/disable the service and make the service session remain unchange even after reboot
+
+32. sudo apt-get update && sudo apt-get upgrade : it'll update and upgrade all installed packages and auto-remove packages which are no longer required
+
+33. apt-get install package_name : it'll install specified name software but software name must be correct
+
+34. python -m pip install module_name : it'll install module in python package 
+->  pip install python_module : it'll install python module or package
+
+35. git clone url : it'll clone specified package in the specified directory from github
+
+36. grep : this command narrow down the result
+
+37. ps : list out the running process 
+->  ps -aux : shows all the running services on linux, their status, memory usage, pid, user 
+
+38. sudo dpkg --list : it'll list all installed programs.
+
+39. sudo apt remove package_name : it'll remove package from system
+
+40. sudo autoremove : it'll autoremove old packages which is set to get removed from system.
+
+41. to end process of unresponsive applications, type following commands:
+    pgrep <package_name> : it'll print the id of that application.
+    pkill <application_id> : it'll kill that specific process
+
+42. sudo passwd user : it'll change user's password
+
+43. command; command : it is used to run multiple command at same time
+->  ls dir; cat /dir/file.ext : it'll first list all content of directory and then concatenate the output of the specified file.
+
+44. which <command> : it is used to show where an executable is in any of the PATH directories.
+
+45. top : top shows you what processes are taking up the most system resources.
+->  kill <PID> : it'll kill the unneeded process of specified PID
+
+46. to view files in tree-branched format, first type sudo apt-get install tree and then 
+->  tree -d : it'll format the output in tree-branched format.
+
+47. gzip file_name.ext : it'll convert file into .gz format 
+->  gunzip file_name.ext : it'll revert file back to normal readable,writeable, executable format
+
+48. tar : compress and extract files from tar extension files(like zip files)
+
+49. df : it'll display disk storage
+->  df -h : it'll show the disk space in a system in human readable form
+
+50. du : it'll display directory storage
+
+51. who : Print information about users who are currently logged in.
+
+52. uname -a : prints all information about a system
+
+53. date : will show you your system current day, date, time and timezone.
+
+54. more : used to view text files, displaying one screen at a time in case if a file is large. We can scroll up and down through page.
+
+55. useradd username : it'll create new user and from that we can login into and then typing passwd username will set the password for the user
+
+56. userdel username : it'll delete the user
+->  userdel -rf username : it'll delete the user and it's directory from the system 
+
+57. usermod : it'll modify the permissions of the specified user 
+
+58. groupadd groupname : it'll add the new group in the system
+
+59. groupmod groupname : it'll modify the properties of the group
+->  groupmod -n new_groupname old_groupname : it'll rename the group
+
